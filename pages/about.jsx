@@ -1,4 +1,11 @@
+import { useEffect } from "react"
+
 function About() {
+
+    useEffect(() => {
+        document.title = "Ninja List | About"
+    }, [])
+
     return (
         <div>
             <h1>About</h1>

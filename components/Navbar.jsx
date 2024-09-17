@@ -1,10 +1,12 @@
 import Link from "next/link"
+import Image from "next/image"
+import logo from "../public/logo.png"
 
 function Navbar() {
     return (
         <nav>
             <div className="logo">
-                <h1>Ninja List</h1>
+                <Image priority={true} width={128} height={77} src={logo} alt="ninja logo" />
             </div>
             <ul>
                 <Link href={"/"}>Home</Link>
